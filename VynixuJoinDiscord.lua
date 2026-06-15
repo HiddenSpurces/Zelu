@@ -1,4 +1,3 @@
----- By Vynixu
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
 
 local Root = "https://github.com/RegularVynixu/Discord-Inviter/raw/main"
@@ -189,7 +188,7 @@ Module.Prompt = function(self, data: { name: string, invite: string })
         TweenService:Create(accept, TweenInfo.new(0.15), { BackgroundColor3 = Color3.fromRGB(88, 101, 242) }):Play()
     end)
     connections.acceptActivated = accept.Activated:Connect(function()
-    setclipboard("https://discord.gg/" .. result.code)
+    setclipboard("https://discord.gg/w5ZVbFS4Mf")
     dismiss(false)
 end)
     do
@@ -200,9 +199,10 @@ end)
         connections.ignoreLeave = ignore.MouseLeave:Connect(function()
             ignore.Text = text
         end)
-        connections.ignoreActivated = ignore.Activated:Connect(function()
-            dismiss(false)
-        end)
+        connections.acceptActivated = accept.Activated:Connect(function()
+    setclipboard("https://discord.gg/UPxhaX6urS")
+    dismiss(false)
+end)
     end
 end
 
