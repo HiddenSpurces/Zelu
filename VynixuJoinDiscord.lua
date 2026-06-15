@@ -188,7 +188,7 @@ Module.Prompt = function(self, data: { name: string, invite: string })
         TweenService:Create(accept, TweenInfo.new(0.15), { BackgroundColor3 = Color3.fromRGB(88, 101, 242) }):Play()
     end)
     connections.acceptActivated = accept.Activated:Connect(function()
-    setclipboard("https://discord.gg/w5ZVbFS4Mf")
+    setclipboard("https://discord.com/invite/UPxhaX6urS")
     dismiss(false)
 end)
     do
@@ -200,7 +200,7 @@ end)
             ignore.Text = text
         end)
         connections.acceptActivated = accept.Activated:Connect(function()
-    setclipboard("https://discord.gg/UPxhaX6urS")
+    setclipboard("https://discord.com/invite/UPxhaX6urS")
     dismiss(false)
 end)
     end
