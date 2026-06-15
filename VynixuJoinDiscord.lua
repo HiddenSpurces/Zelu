@@ -189,8 +189,9 @@ Module.Prompt = function(self, data: { name: string, invite: string })
         TweenService:Create(accept, TweenInfo.new(0.15), { BackgroundColor3 = Color3.fromRGB(88, 101, 242) }):Play()
     end)
     connections.acceptActivated = accept.Activated:Connect(function()
-        dismiss(true)
-    end)
+    setclipboard("https://discord.gg/" .. result.code)
+    dismiss(false)
+end)
     do
         local text = ignore.Text
         connections.ignoreEnter = ignore.MouseEnter:Connect(function()
